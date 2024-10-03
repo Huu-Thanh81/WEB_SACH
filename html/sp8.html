@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="../assets/images/logonxb.ico">
+    <title>sachWeb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+<body class="body">
+     <!--HEADER -->
+     <header class="header">
+        <div class="container-flui">
+          <div class="inner-logo">
+            <a href="../index.html">
+              <img src="../assets/images/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="inner-search">
+            <div class="search">
+              <input class="input-search" type="text" placeholder="Bạn tìm kiếm gì...">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+          <div class="inner-menu">
+            <ul>
+              <li><a href="../index.html">TRANG CHỦ</a></li>
+              <li><a href="../product.html">SÁCH</a></li>
+              <li><a href="../contact.html">LIÊN HỆ</a></li>
+              <li><a href="../about.html">GIỚI THIỆU</a></li>
+            </ul>
+          </div>
+          <div class="inner-social">
+            <div class="inner-icon"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            <div class="inner-icon"><a href="https://www.facebook.com/fahasa/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+          </div>
+        </div>
+      </header>
+      <!--EDN HEADER -->
+      <!--INFOR-PRODUCT1 -->
+      <div class="infor-product1">
+        <div class="container-fui">
+          <div class="inner-wrap">
+            <div class="inner-img">
+              <img src="../assets/images/trituenhothai.webp" alt="trí tuệ nho thái">
+            </div>
+            <div class="inner-content">
+              <h2 class="title1">Trí Tuệ Nho Thái</h2>
+              <div class="sub-title1">
+                <span><b>Nhà xuất bản:</b>  NXB Văn Hóa Thông Tin</span>
+              </div>
+              <div class="sub-title1">
+                <span><b>Tác giả:</b>  Thu Giang - Nguyễn Duy Cần</span>
+              </div>
+              <div class="Rating">
+                <span><b>Đánh giá:</b>  4.7 </span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="danhgia">(5 lượt)</span>
+              </div>
+              <div class="price">
+                <b>Giá:</b><br>
+                <span> 55,000<sup> đ</sup></span>
+              </div>
+              <div class="quantity">
+                <span><b>Số lượng:</b> 2</span>
+              </div>
+
+              <div class="button-one">
+                <button type="button" class="bought" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span>Mua hàng ngay</span>
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade modal-form" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="logo">
+                        <img src="../assets/images/logo.png" alt="logo">
+                      </div>
+                      <h5 class="modal-title">Cảm ơn bạn đã chọn mua tại sachweb.vn!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h6 class="sub-title1">Vui lòng nhập thông tin giao hàng:</h6>
+                      <form action="" id="orderForm">
+                        <div class="inner-group">
+                          
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Họ và tên*" required>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Số điện thoại*" required>
+                          </div>
+                          
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Địa chỉ*" required> 
+                          </div>
+
+                          <div class="form-group">
+                            <textarea class="form-control" placeholder="Ghi chú"></textarea> 
+                          </div>
+
+                          <div class="form-group">
+                            <button type="button" class="bt" id="submitOrder">Đặt hàng</button>
+                          </div>
+                  
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Xác nhận đơn hàng Modal -->
+              <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Xác nhận đặt hàng</h5>
+                    </div>
+                    <div class="modal-body">
+                      Đơn hàng của bạn đã được đặt thành công! Cảm ơn bạn đã tin tưởng chúng tôi.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="button" data-dismiss="modal">Đóng</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                document.getElementById('submitOrder').addEventListener('click', function () {
+                  var form = document.getElementById('orderForm');
+                  if (form.checkValidity()) {
+                    // Nếu form hợp lệ, hiển thị modal xác nhận
+                    $('#exampleModal').modal('hide'); // Đóng modal nhập thông tin
+                    $('#confirmationModal').modal('show');// Mở modal xác nhận
+                    // Tự động đóng modal xác nhận sau 5 giây
+                    setTimeout(function () {
+                    $('#confirmationModal').modal('hide');
+                    }, 3000);
+                  } else {
+                    form.reportValidity(); // Hiển thị lỗi nếu form không hợp lệ
+                  }
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END INFOR-PRODUCT1 -->
+      <!--INTRODUCT-->
+      <div class="inner-introduct">
+        <div class="container-flui">
+          <div class="inner-wrap">
+            <div class="inner-content">
+              <h2 class="tilte">Thông tin chi tiết</h2>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td colspan="5" class="td">Bood id</td>
+                    <td class="td1">8</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="td">Tên sách</td>
+                    <td class="td1">Trí Tuệ Nho Thái</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="td">Tác giả</td>
+                    <td class="td1">Thu Giang - Nguyễn Duy Cần</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="td">Nhà xuất bản</td>
+                    <td class="td1">NXB Văn Hóa Thông Tin</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="td">Năm XB</td>
+                    <td class="td1">2005</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="inner-desc">
+              <h2 class="sub-desc">Mô tả sản phẩm</h2>
+              <p class="desc1">"Trí Tuệ Nho Thái" của Thu Giang - Nguyễn Duy Cần là một cuốn sách bàn về triết học phương Đông, đặc biệt là tư tưởng và triết lý Nho giáo. Tác giả phân tích các giá trị văn hóa, đạo đức và nhân sinh quan trong Nho giáo, từ đó đưa ra những suy ngẫm sâu sắc về lối sống và cách hành xử trong xã hội hiện đại. Cuốn sách không chỉ giúp người đọc hiểu rõ hơn về tư tưởng Nho giáo mà còn áp dụng những bài học quý giá vào cuộc sống, giúp rèn luyện phẩm chất và trí tuệ con người.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--END INTRODUCT-->
+    <!--FOOTER -->
+    <div class="footer">
+      <div class="header">
+        <div class="container-flui">
+          <div class="inner-wrap">
+            <div class="inner-item">
+              <div class="box">
+                <span>
+                  <img src="https://cdn.haluta.vn/media/core/icons/san-pham-chat-luong.svg" alt="">
+                </span>
+                <span>SẢN PHẨM CHẤT LƯỢNG</span>
+              </div>
+            </div>
+
+            <div class="inner-item">
+              <div class="box">
+                <span>
+                  <img src="https://cdn.haluta.vn/media/core/icons/dich-vu-chuyen-nghiep.svg" alt="">
+                </span>
+                <span>DỊCH VỤ CHUYÊN NGHIỆP</span>
+              </div>
+            </div>
+
+            <div class="inner-item">
+              <div class="box">
+                <span>
+                  <img src="https://cdn.haluta.vn/media/core/icons/giao-hang-toan-quoc.svg" alt="">
+                </span>
+                <span>GIAO HÀNG TOÀN QUỐC</span>
+              </div>
+            </div>
+
+            <div class="inner-item">
+              <div class="box">
+                <span>
+                  <img src="https://cdn.haluta.vn/media/core/icons/mien-phi-bao-hanh.svg" alt="">
+                </span>
+                <span>MIỄN PHÍ BẢO HÀNH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-social">
+        <div class="container-flui">
+          <div class="inner-wrap">
+            <div class="title">
+              SACHWEB.VN
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       <div class="coright">Copyrights © by sachweb team. All rights reserved</div>
+    </div>
+  <!--END FOOTER -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
