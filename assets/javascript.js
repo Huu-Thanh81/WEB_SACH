@@ -10,3 +10,8 @@ document.getElementById('submitForm').addEventListener('click', function () {
       form.reportValidity(); // Kiểm tra và báo lỗi nếu form không hợp lệ
     }
 });
+
+
+
+
+
